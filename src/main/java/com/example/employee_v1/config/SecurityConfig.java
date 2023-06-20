@@ -1,6 +1,7 @@
-package com.example.employee_v1.security;
+package com.example.employee_v1.config;
 
 import com.example.employee_v1.Utils.Constants;
+import com.example.employee_v1.security.JwtService.JwtAuthFilter;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -11,7 +12,7 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
-import uz.pdp.appproblemsolver.security.JwtAuthFilter;
+
 
 
 @EnableWebSecurity
