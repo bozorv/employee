@@ -28,10 +28,9 @@ public class Role {
             uniqueConstraints = {
                     @UniqueConstraint(columnNames = {"role_id", "permission"})})
     @Column(name = "permission")
-    @Enumerated(EnumType.STRING)
-    private Set<Permission> permissionSet;
+    private Set<String>permissionSet;
 
-    public Role(String name, RoleType roleType, Set<Permission> permission) {
+    public Role(String name, RoleType roleType, Set<String> permission) {
         this.name = name;
         this.roleType = roleType;
         this.permissionSet = permission;

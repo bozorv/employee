@@ -1,19 +1,14 @@
 package com.example.employee_v1.entity;
 
-import org.springframework.security.core.GrantedAuthority;
+public interface Permission {
+    String FACULTY_ADD = "FACULTY_ADD";
+    String FACULTY_UPDATE="FACULTY_UPDATE";
+    String FACULTY_DELETE="FACULTY_DELETE";
+    String DEPARTMENT_ADD="DEPARTMENT_ADD";
+    String DEPARTMENT_UPDATE="DEPARTMENT_UPDATE";
+    String DEPARTMENT_DELETE="DEPARTMENT_DELETE";
+    String EMPLOYEE_ADD="EMPLOYEE_ADD";
+    String EMPLOYEE_UPDATE="EMPLOYEE_UPDATE";
+    String EMPLOYEE_DELETE="EMPLOYEE_DELETE";
 
-public enum Permission implements GrantedAuthority {
-     FACULTY_ADD,
-     FACULTY_DELETE,
-     FACULTY_UPDATE,
-     DEPARTMENT_ADD,
-     DEPARTMENT_DELETE,
-     DEPARTMENT_UPDATE,
-
-    ;
-
-    @Override
-    public String getAuthority() {
-        return name();
-    }
 }
